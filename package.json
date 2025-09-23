@@ -17,16 +17,15 @@
     "@dotlottie/react-player": "^1.6.19",
     "@lottiefiles/dotlottie-react": "^0.15.1",
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9.34.0",
     "eslint-config-next": "^15.5.2",
     "framer-motion": "^12.23.12",
-    "postcss": "^8.5.6",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5"
   }
 }

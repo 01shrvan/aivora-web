@@ -13,7 +13,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="py-4 border-b border-white/15 md:border-none relative">
+    <header className="py-4 border-b border-white/15 md:border-none relative px-4">
       <div className="container">
         <div className="flex justify-between items-center md:border md:border-white/15 md:p-2.5 md:rounded-xl md:max-w-2xl md:mx-auto">
           <div>

@@ -1,14 +1,1 @@
 @import "tailwindcss";
-
-@layer base {
-  .container {
-    center: true;
-    padding: 20px;
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding: 80px;
-    }
-  }
-}

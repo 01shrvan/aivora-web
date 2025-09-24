@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans} from "next/font/google";
 import { twMerge } from "tailwind-merge";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aivora.com"), 
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={twMerge(inter.className, "bg-black text-white antialiased")}>
+      <body className={twMerge(dmSans.className, "bg-black text-white antialiased")}>
         {children}
       </body>
     </html>

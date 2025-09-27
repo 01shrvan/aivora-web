@@ -13,9 +13,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="py-4 border-b border-white/15 md:border-none relative px-4">
-      <div className="container">
-        <div className="flex justify-between items-center md:border md:border-white/15 md:p-2.5 md:rounded-xl md:max-w-2xl md:mx-auto">
+    <header className="py-4 border-b border-white/15 md:border-none relative">
+      <div className="w-full flex justify-center px-4">
+        <div className="flex justify-between items-center w-full md:max-w-2xl md:border md:border-white/15 md:p-2.5 md:rounded-xl">
           <div>
             <div className="border rounded-lg h-10 w-10 inline-flex justify-center items-center border-white/15">
               <Image
@@ -38,7 +38,6 @@ export const Header = () => {
 
           <div className="flex gap-4 items-center">
             <Button>Get Started</Button>
-            
             <button 
               onClick={toggleMenu}
               className="md:hidden"
@@ -51,24 +50,47 @@ export const Header = () => {
             </button>
           </div>
         </div>
-
-        <div className={`md:hidden absolute top-full left-0 right-0 mt-2 bg-black/95 backdrop-blur-md border-t border-white/15 shadow-[0px_8px_32px_rgba(0,0,0,0.5)] transition-all duration-300 z-50 ${
-          isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
-        }`}>
-          <nav className="p-4">
-            <div className="flex flex-col gap-4">
-              <a href="#" className="text-white hover:text-white/70 transition py-2" onClick={() => setIsMenuOpen(false)}>About</a>
-              <a href="#" className="text-white hover:text-white/70 transition py-2" onClick={() => setIsMenuOpen(false)}>Services</a>
-              <a href="#" className="text-white hover:text-white/70 transition py-2" onClick={() => setIsMenuOpen(false)}>Showcase</a>
-              <a href="#" className="text-white hover:text-white/70 transition py-2" onClick={() => setIsMenuOpen(false)}>Blog</a>
-            </div>
-          </nav>
-        </div>
-
-        {isMenuOpen && (
-          <div className="md:hidden fixed inset-0 bg-black/20 z-40" onClick={() => setIsMenuOpen(false)} />
-        )}
       </div>
+
+      <div className={`md:hidden absolute top-full left-0 right-0 mt-2 mx-4 rounded-xl border border-white/15 bg-black/90 backdrop-blur-md shadow-[0px_8px_32px_rgba(0,0,0,0.5)] transition-all duration-300 z-50 overflow-hidden ${
+        isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+      }`}>
+        <nav className="flex flex-col divide-y divide-white/10">
+          <a 
+            href="#" 
+            className="px-4 py-3 text-white hover:bg-white/10 transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            About
+          </a>
+          <a 
+            href="#" 
+            className="px-4 py-3 text-white hover:bg-white/10 transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Services
+          </a>
+          <a 
+            href="#" 
+            className="px-4 py-3 text-white hover:bg-white/10 transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Showcase
+          </a>
+          <a 
+            href="#" 
+            className="px-4 py-3 text-white hover:bg-white/10 transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Blog
+          </a>
+        </nav>
+      </div>
+
+      {/* Overlay */}
+      {isMenuOpen && (
+        <div className="md:hidden fixed inset-0 bg-black/20 z-40" onClick={() => setIsMenuOpen(false)} />
+      )}
     </header>
   );
 };

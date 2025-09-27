@@ -7,7 +7,7 @@ import productImage from "@/assets/product-image.png"
 const tabs = [
   {
     icon: "/assets/lottie/vroom.lottie",
-    title: "User-friendly dashboard",
+    title: "Intelligent dashboards",
     isNew: false,
     backgroundPositionX: 0,
     backgroundPositionY: 0,
@@ -15,7 +15,7 @@ const tabs = [
   },
   {
     icon: "/assets/lottie/click.lottie",
-    title: "One-click optimization",
+    title: "One-click automation",
     isNew: false,
     backgroundPositionX: 98,
     backgroundPositionY: 100,
@@ -23,7 +23,7 @@ const tabs = [
   },
   {
     icon: "/assets/lottie/stars.lottie",
-    title: "Smart keyword generator",
+    title: "AI-powered insights",
     isNew: true,
     backgroundPositionX: 100,
     backgroundPositionY: 27,
@@ -32,10 +32,13 @@ const tabs = [
 ];
 
 export const Features = () => {
-  return <section className="py-20 md:py-24">
+  return <section className="py-15 md:py-20">
     <div className="p-4">
-      <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">Elevate your SEO efforts.</h2>
-      <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tight text-center mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2 className="text-5xl md:text-6xl font-medium text-center tracking-tighter">Smarter solutions. Faster growth.</h2>
+      <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto tracking-tight text-center mt-5"> At <span className="text-white font-semibold">Aivora Solutions</span>, we build
+        intelligent tools that help businesses scale with confidence.
+        From automation to AI-driven insights, we design technology
+        that powers success quietly behind the scenes.</p>
       <div className="mt-10 flex flex-col lg:flex-row gap-3">
         {tabs.map(tab => (
           <div key={tab.title} className="border border-white/15 flex p-2.5 rounded-xl gap-2.5 items-center lg:flex-1">

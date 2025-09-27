@@ -3,6 +3,7 @@ import { Hero } from "../sections/Hero";
 import { LogoTicker } from "../sections/LogoTicker";
 import { CallToAction } from "../sections/CallToAction"
 import { Features } from "../sections/Features"
+import { Testimonials } from "../sections/Testimonials"
 import { Footer } from "../sections/Footer"
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <Hero />
     <LogoTicker />
     <Features />
+    <Testimonials />
     <CallToAction />
     <Footer />
   </>

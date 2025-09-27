@@ -13,9 +13,11 @@ export const Header = () => {
   };
 
   return (
-    <header className="py-4 border-b border-white/15 md:border-none relative">
+    <header className="py-4 border-b border-white/15 md:border-none sticky top-0 z-10">
+      <div className="absolute inset-0 backdrop-blur -z-10 md:hidden"></div>
       <div className="w-full flex justify-center px-4">
-        <div className="flex justify-between items-center w-full md:max-w-2xl md:border md:border-white/15 md:p-2.5 md:rounded-xl">
+        <div className="flex justify-between items-center w-full md:max-w-2xl md:border md:border-white/15 md:p-2.5 md:rounded-xl relative">
+          <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
             <div className="border rounded-lg h-10 w-10 inline-flex justify-center items-center border-white/15">
               <Image

@@ -9,17 +9,15 @@ import echoLogo from "@/assets/logo-echo.png"
 
 export const LogoTicker = () => {
   return (
-    <section className="py-20 md:py-24 overflow-hidden">
+    <section className="py-15 md:py-20 overflow-hidden">
       <div className="p-4 relative">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          {/* Title */}
           <div className="flex-shrink-0">
             <h2 className="text-lg md:text-xl lg:text-2xl text-cyan-100/80 font-semibold text-center md:text-left">
               Trusted by top innovative teams
             </h2>
           </div>
 
-          {/* Ticker */}
           <div className="flex-1 overflow-hidden px-8 md:px-12 [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
             <div className="flex flex-none gap-14 animate-[slideLeft_20s_linear_infinite]">
               {[

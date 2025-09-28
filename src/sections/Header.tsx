@@ -35,6 +35,7 @@ export const Header = () => {
               <a href="#" className="hover:text-white/70 transition">Services</a>
               <a href="#" className="hover:text-white/70 transition">Showcase</a>
               <a href="#" className="hover:text-white/70 transition">Blog</a>
+              <a href="#" className="hover:text-white/70 transition">Contact</a>
             </nav>
           </div>
 
@@ -86,10 +87,16 @@ export const Header = () => {
           >
             Blog
           </a>
+          <a 
+            href="#" 
+            className="px-4 py-3 text-white hover:bg-white/10 transition"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </a>
         </nav>
       </div>
 
-      {/* Overlay */}
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-black/20 z-40" onClick={() => setIsMenuOpen(false)} />
       )}

@@ -14,10 +14,10 @@ export const CallToAction = () => {
             backgroundImage: `url(${gridLines.src})`,
           }}></div>
         <div className="relative">
-          <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text font-medium text-center">AI driven SEO for everyone.</h2>
-          <p className="text-center text-lg md:text-xl mx-w-xs mx-auto text-white/70 px-4 mt-5 tracking-tight">Unlock the power of AI to optimize your website's SEO and drive more traffic.</p>
+          <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text font-medium text-center">Power your business with Aivora.</h2>
+          <p className="text-center text-lg md:text-xl mx-w-xs mx-auto text-white/70 px-4 mt-5 tracking-tight">Automate workflows, scale smarter, and stay ahead with intelligent solutions built for modern teams.</p>
           <div className="flex justify-center mt-8">
-            <Button>Get Started</Button>
+            <Button>Start Free Trial</Button>
           </div>
         </div>
       </div>

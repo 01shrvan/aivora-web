@@ -31,11 +31,11 @@ export const Header = () => {
 
           <div className="hidden md:block">
             <nav className="flex gap-8 text-white text-sm">
-              <a href="#" className="hover:text-white/70 transition">About</a>
-              <a href="#" className="hover:text-white/70 transition">Services</a>
-              <a href="#" className="hover:text-white/70 transition">Showcase</a>
-              <a href="#" className="hover:text-white/70 transition">Blog</a>
-              <a href="#" className="hover:text-white/70 transition">Contact</a>
+              <a href="/about" className="hover:text-white/70 transition">About</a>
+              <a href="/services" className="hover:text-white/70 transition">Services</a>
+              <a href="/showcase" className="hover:text-white/70 transition">Showcase</a>
+              <a href="/blog" className="hover:text-white/70 transition">Blog</a>
+              <a href="/contact" className="hover:text-white/70 transition">Contact</a>
             </nav>
           </div>
 

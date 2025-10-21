@@ -60,35 +60,35 @@ export const Header = () => {
       }`}>
         <nav className="flex flex-col divide-y divide-white/10">
           <a 
-            href="#" 
+            href="/about" 
             className="px-4 py-3 text-white hover:bg-white/10 transition"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </a>
           <a 
-            href="#" 
+            href="/services" 
             className="px-4 py-3 text-white hover:bg-white/10 transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Services
           </a>
           <a 
-            href="#" 
+            href="/showcase" 
             className="px-4 py-3 text-white hover:bg-white/10 transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Showcase
           </a>
           <a 
-            href="#" 
+            href="/blog" 
             className="px-4 py-3 text-white hover:bg-white/10 transition"
             onClick={() => setIsMenuOpen(false)}
           >
             Blog
           </a>
           <a 
-            href="#" 
+            href="/contact" 
             className="px-4 py-3 text-white hover:bg-white/10 transition"
             onClick={() => setIsMenuOpen(false)}
           >

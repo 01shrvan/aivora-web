@@ -19,14 +19,14 @@ export const Header = () => {
         <div className="flex justify-between items-center w-full md:max-w-2xl md:border md:border-white/15 md:p-2.5 md:rounded-sm relative">
           <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
-            <div className="border rounded-sm h-10 w-10 inline-flex justify-center items-center border-white/15">
+            <a href="/" className="border rounded-sm h-10 w-10 inline-flex justify-center items-center border-white/15">
               <Image
                 src="/logo.svg"
                 alt="Logo"
                 width={40}
                 height={40}
               />
-            </div>
+            </a>
           </div>
 
           <div className="hidden md:block">

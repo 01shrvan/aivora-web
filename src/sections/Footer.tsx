@@ -16,11 +16,11 @@ export const Footer = () => {
           <div className="font-medium">Aivora Solutions</div>
         </div>
         <nav className="flex flex-col md:flex-row gap-5 md:gap-7 items-center">
-          <a href="#about" className="text-white/70 hover:text-white text-xs md:text-sm transition">About</a>
-          <a href="#services" className="text-white/70 hover:text-white text-xs md:text-sm transition">Services</a>
-          <a href="#showcase" className="text-white/70 hover:text-white text-xs md:text-sm transition">Showcase</a>
-          <a href="#blog" className="text-white/70 hover:text-white text-xs md:text-sm transition">Blog</a>
-          <a href="#contact" className="text-white/70 hover:text-white text-xs md:text-sm transition">Contact</a>
+          <a href="/about" className="text-white/70 hover:text-white text-xs md:text-sm transition">About</a>
+          <a href="/services" className="text-white/70 hover:text-white text-xs md:text-sm transition">Services</a>
+          <a href="/showcase" className="text-white/70 hover:text-white text-xs md:text-sm transition">Showcase</a>
+          <a href="/blog" className="text-white/70 hover:text-white text-xs md:text-sm transition">Blog</a>
+          <a href="/contact" className="text-white/70 hover:text-white text-xs md:text-sm transition">Contact</a>
         </nav>
         <div className="flex gap-5 md:flex-1 md:justify-end">
           <a href="https://x.com/01shrvan" target="_blank" rel="noopener noreferrer" aria-label="Twitter">

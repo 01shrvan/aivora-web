@@ -1,4 +1,3 @@
-import { Button } from "@/components/Button"
 import starsBg from '@/assets/stars.png'
 
 export const Hero = () => {

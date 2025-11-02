@@ -76,7 +76,6 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
                                 
                                 <div className="container mx-auto px-4 relative z-10">
                                     <div className="max-w-4xl mx-auto">
-                                        {/* Header */}
                                         <div className="mb-8 md:mb-12">
                                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                                                 <span className="bg-gradient-to-r from-white via-cyan-100 to-cyan-300 text-transparent bg-clip-text">
@@ -102,7 +101,6 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
                                             </div>
                                         </div>
 
-                                        {/* Featured Image */}
                                         {post.thumbnail?.url && (
                                             <div className="mb-12 rounded-2xl overflow-hidden border border-white/10">
                                                 <img
@@ -115,7 +113,6 @@ const BlogPostPage = async ({ params }: BlogPostPageProps) => {
                                             </div>
                                         )}
 
-                                        {/* Content */}
                                         <div 
                                             className="prose prose-invert prose-lg max-w-none
                                                 prose-headings:font-bold prose-headings:tracking-tight

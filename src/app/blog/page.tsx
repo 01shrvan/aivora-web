@@ -62,7 +62,6 @@ const BlogPage = async () => {
             >
                 {async ([data]) => {
                     'use server';
-                    // Filter only published posts
                     const publishedPosts = data.blog.items.filter(
                         (post: any) => post.status === 'published'
                     );

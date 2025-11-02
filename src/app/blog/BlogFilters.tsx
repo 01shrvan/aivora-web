@@ -11,6 +11,14 @@ type BlogPost = {
     _title: string;
     _slug: string;
     status: string;
+    category?: string;
+    description?: string;
+    tags?: string[];
+    publishDate?: string;
+    image?: {
+        url: string;
+        alt?: string;
+    };
     thumbnail?: {
         url: string;
         alt?: string;

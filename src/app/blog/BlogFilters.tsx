@@ -59,9 +59,8 @@ const BlogFilters = ({ posts }: { posts: BlogPost[] }) => {
                                 <button
                                     key={opt}
                                     onClick={() => setCategory(opt)}
-                                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${
-                                        category === opt ? 'bg-white text-black' : 'text-white/70 hover:text-white'
-                                    }`}
+                                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm transition-colors ${category === opt ? 'bg-white text-black' : 'text-white/70 hover:text-white'
+                                        }`}
                                     aria-pressed={category === opt}
                                 >
                                     {opt === 'All' ? <BookOpen className="w-4 h-4" /> : <Tag className="w-4 h-4" />}
@@ -115,11 +114,16 @@ const BlogFilters = ({ posts }: { posts: BlogPost[] }) => {
                                         <div className="flex items-center gap-3 text-xs text-white/50 mb-2">
                                             <span className="inline-flex items-center gap-1">
                                                 <Calendar className="w-3.5 h-3.5" />
-                                                {new Date(post.publishDate).toLocaleDateString(undefined, {
-                                                    year: 'numeric',
-                                                    month: 'short',
-                                                    day: 'numeric',
-                                                })}
+                                                {post.publishDate && (
+                                                    <span className="inline-flex items-center gap-1">
+                                                        <Calendar className="w-3.5 h-3.5" />
+                                                        {new Date(post.publishDate).toLocaleDateString(undefined, {
+                                                            year: 'numeric',
+                                                            month: 'short',
+                                                            day: 'numeric',
+                                                        })}
+                                                    </span>
+                                                )}
                                             </span>
                                             {post.category && (
                                                 <span className="inline-flex items-center gap-1">
